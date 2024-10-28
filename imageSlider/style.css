@@ -1,57 +1,21 @@
-/* Reset margins and paddings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Center the slider in the viewport */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Slider container */
-.slider-container {
-  width: 90%;
-  max-width: 800px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-/* Inner slider styling */
 .slider {
-  display: flex;
-  transition: transform 1s ease-in-out;
+  position: relative;
+  max-width: 600px; /* Set your desired width */
+  margin: auto;
+  overflow: hidden;
 }
 
-/* Individual slide */
 .slide {
-  min-width: 100%;
-  transition: opacity 1s ease;
-  opacity: 0;
-}
-
-/* Active slide (visible) */
-.slide.active {
-  opacity: 1;
-}
-
-/* Image styling */
-img {
+  display: none; /* Hide all slides by default */
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: auto; /* Adjust height based on your images */
 }
 
-/* Mobile responsive styling */
-@media (max-width: 768px) {
-  .slider-container {
-    width: 100%;
-  }
+.active {
+  display: block; /* Show the active slide */
 }
