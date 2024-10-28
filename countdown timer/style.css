@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling the body and centering content */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* Timer Container */
+.container {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Title Styling */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Input and Button Container */
+.input-container {
+  display: flex;
+  gap: 10px;
+  /* justify-content: center; */
+  margin-bottom: 20px;
+  /* flex-wrap: wrap; */
+}
+
+/* Input Field Styling */
+input {
+  width: 100%;
+  max-width: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:disabled {
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: not-allowed;
+}
+
+#startButton {
+  background-color: #28a745;
+  color: #fff;
+}
+
+#startButton:hover {
+  background-color: #218838;
+}
+
+#resetButton {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+#resetButton:hover {
+  background-color: #c82333;
+}
+
+/* Timer Display Styling */
+.display {
+  margin-top: 5px;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.display.active {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .display {
+    font-size: 3rem;
+  }
+}

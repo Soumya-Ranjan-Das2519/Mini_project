@@ -1,0 +1,33 @@
+/* Ensure full-page height and center content */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  font-family: "Arial", sans-serif;
+}
+
+/* Container for the text */
+.container {
+  text-align: center;
+}
+
+/* Blinking text styling */
+#blinking-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #blinking-text {
+    font-size: 1.5rem;
+  }
+}

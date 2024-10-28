@@ -1,0 +1,57 @@
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the slider in the viewport */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Slider container */
+.slider-container {
+  width: 90%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Inner slider styling */
+.slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+/* Individual slide */
+.slide {
+  min-width: 100%;
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
+/* Active slide (visible) */
+.slide.active {
+  opacity: 1;
+}
+
+/* Image styling */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+  .slider-container {
+    width: 100%;
+  }
+}
